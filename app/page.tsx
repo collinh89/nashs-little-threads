@@ -1,32 +1,9 @@
-import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
-import { Image } from "@heroui/image";
-import { button as buttonStyles } from "@heroui/theme";
-
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import DashboardPage from "./dashboard/page";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div>
-        <Image alt="Nash's Little Threads" src="/Nash-logo.png" width={700} />
-      </div>
-      <div className="flex gap-3">
-        <Link
-          isExternal
-          className={buttonStyles({
-            color: "primary",
-            radius: "full",
-            variant: "shadow",
-          })}
-          href={siteConfig.links.facebook}
-        >
-          Facebook
-        </Link>
-      </div>
+    <section style={{ height: "80vh" }}>
+      <DashboardPage />
     </section>
   );
 }

@@ -20,6 +20,9 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { SearchIcon } from "@/components/icons";
 
 export const Navbar = () => {
+  const style = {
+    maxWidth: "none",
+  };
   const searchInput = (
     <Input
       aria-label="Search"
@@ -42,7 +45,7 @@ export const Navbar = () => {
   );
 
   return (
-    <HeroUINavbar isBordered maxWidth="xl" position="sticky">
+    <HeroUINavbar maxWidth="full" isBordered position="sticky">
       <NavbarContent justify="start">
         <NavbarBrand as="li">
           <NextLink className="flex justify-start items-center gap-1" href="/">

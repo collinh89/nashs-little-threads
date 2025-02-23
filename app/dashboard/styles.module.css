@@ -1,0 +1,11 @@
+.card {
+  width: 100%;
+  height: 55%;
+}
+
+.cardBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a5d8ff;
+}
